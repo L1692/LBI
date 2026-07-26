@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luigi Franchi">
     <meta name="description" content="Luigi Business Intelligence is a website that provides business intelligence solutions for companies worldwide.">
-    <meta robots="index, follow">
+    <meta name="robots" content="index, follow">
     <meta name="keywords" content="business intelligence, data analysis, analytics, talent management, project management, data visualization">
     <title>Luigi Business Intelligence</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -24,12 +24,13 @@
             <li id="podcast"><a href="podcast.html">Podcast</a></li>
         </ul>
         </nav>
-        <h1><a href="workorder.html" disabled>Pagina del work order</a></h1>
+        <h1>Pagina del work order</h1>
     </header>
     <main>
         <article>
             <h2>0001.A1</h2>
             <h3>Timesheet per il work order <strong>0001.A1</strong></h3>
+            <!-- TODO: rimuovere gli attributi border, cellpadding e cellspacing (obsoleti in HTML5) quando bordi e spaziature saranno definiti via CSS -->
             <table border="1" cellpadding="5" cellspacing="2">
                 <tr>
                     <th scope="col" id="data">Data</th>
@@ -40,7 +41,7 @@
                 <tr>
                     <td headers="data">2024-06-01</td>
                     <td headers="risorsa" rowspan="2">Luigi Franchi</td>
-                    <td headers="attivita">Analisi <hr />dei dati</td>
+                    <td headers="attivita">Analisi <br />dei dati</td>
                     <td headers="ore">4</td>
                 </tr>
                 <tr>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Luigi Franchi">
     <meta name="description" content="Luigi Business Intelligence is a website that provides business intelligence solutions for companies worldwide.">
-    <meta robots="index, follow">
+    <meta name="robots" content="index, follow">
     <meta name="keywords" content="business intelligence, data analysis, analytics, talent management, project management, data visualization">
     <title>Luigi Business Intelligence</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -27,17 +27,17 @@
         <option value="">Select your country</option>
         <optgroup label="Europe">
           <option value="italy" selected>Italy</option>
-          <option value="uk" aria-selected="false">UK</option>
-          <option value="germany" aria-selected="false">Germany</option>
-          <option value="france" aria-selected="false">France</option>
+          <option value="uk">UK</option>
+          <option value="germany">Germany</option>
+          <option value="france">France</option>
         </optgroup>
         <optgroup label="North America">
-          <option value="usa" aria-hidden="true" disabled>USA</option>
+          <option value="usa" disabled>USA</option>
         </optgroup>
         <optgroup label="Asia">
-          <option value="russia" aria-hidden="true" disabled>Russia</option>
+          <option value="russia" disabled>Russia</option>
         </optgroup>
-          <option value="anywhere" aria-invalid="true" invalid>Anywhere</option>
+          <option value="anywhere">Anywhere</option>
       </select><br><br>
       <label for="zip">Zip Code:</label>
       <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="Please enter a valid 5-digit zip code" required><br><br>
@@ -61,7 +61,7 @@
       <input type="checkbox" id="role4" name="role4">
       <label for="role4">I am an Admin</label><br>
       <input type="hidden" id="pseudorandom" name="pseudorandom" value="random_value"><br><br>
-      <textarea name="bio" id="bio" rows="4" cols="50" maxlength="5000" wrap="soft" placeholder="Tell us about yourself...">Tell us about yourself...</textarea><br><br>
+      <textarea name="bio" id="bio" rows="4" cols="50" maxlength="5000" wrap="soft" placeholder="Tell us about yourself..."></textarea><br><br>
       <label for="social_media">Where have you heard about us?</label><br>
       <select name="social_media" id="social_media" multiple size="2" required>
         <option value="">Select your social media</option>
@@ -72,8 +72,10 @@
         <option value="youtube">YouTube</option>
         <option value="tiktok">TikTok</option>
         <option value="reddit">Reddit</option>
-        <option value="other">Other: <input type="text" name="other_social_media" placeholder="Please specify..."></option>
+        <option value="other">Other</option>
       </select><br><br>
+      <label for="other_social_media">If you selected "Other", please specify:</label><br>
+      <input type="text" id="other_social_media" name="other_social_media" placeholder="Please specify..."><br><br>
       <label for="activity_url">In case you have a relevant activity, please indicate an URL:</label><br>
       <input type="url" id="activity_url" name="activity_url" placeholder="https://example.com"><br><br>
       <label for="newsletter_frequency">How often would you like to receive our newsletter?</label><br>
