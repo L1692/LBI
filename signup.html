@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luigi Franchi">
+    <meta name="description" content="Luigi Business Intelligence is a website that provides business intelligence solutions for companies worldwide.">
+    <meta robots="index, follow">
+    <meta name="keywords" content="business intelligence, data analysis, analytics, talent management, project management, data visualization">
+    <title>Luigi Business Intelligence</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+    <base target="_self">
+  </head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="manager.html" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="6" required><br><br>
+      <label for="country">Country:</label>
+      <select name="country" id="country" required>
+        <option value="">Select your country</option>
+        <optgroup label="Europe">
+          <option value="italy" selected>Italy</option>
+          <option value="uk" aria-selected="false">UK</option>
+          <option value="germany" aria-selected="false">Germany</option>
+          <option value="france" aria-selected="false">France</option>
+        </optgroup>
+        <optgroup label="North America">
+          <option value="usa" aria-hidden="true" disabled>USA</option>
+        </optgroup>
+        <optgroup label="Asia">
+          <option value="russia" aria-hidden="true" disabled>Russia</option>
+        </optgroup>
+          <option value="anywhere" aria-invalid="true" invalid>Anywhere</option>
+      </select><br><br>
+      <label for="zip">Zip Code:</label>
+      <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="Please enter a valid 5-digit zip code" required><br><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other" required>
+      <label for="other">Other</label><br><br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br><br>
+      <label for="bio">Bio:</label><br>
+      <input type="checkbox" id="role1" name="role1">
+      <label for="role1">I am a Data Analyst</label><br>
+      <input type="checkbox" id="role2" name="role2">
+      <label for="role2">I am a Data Scientist</label><br>
+      <input type="checkbox" id="role3" name="role3">
+      <label for="role3">I am a Business Analyst</label><br>
+      <input type="checkbox" id="role4" name="role4">
+      <label for="role4">I am an Admin</label><br>
+      <input type="hidden" id="pseudorandom" name="pseudorandom" value="random_value"><br><br>
+      <textarea name="bio" id="bio" rows="4" cols="50" maxlength="5000" wrap="soft" placeholder="Tell us about yourself...">Tell us about yourself...</textarea><br><br>
+      <label for="social_media">Where have you heard about us?</label><br>
+      <select name="social_media" id="social_media" multiple size="2" required>
+        <option value="">Select your social media</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="twitter">X (Formerly Twitter)</option>
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="youtube">YouTube</option>
+        <option value="tiktok">TikTok</option>
+        <option value="reddit">Reddit</option>
+        <option value="other">Other: <input type="text" name="other_social_media" placeholder="Please specify..."></option>
+      </select><br><br>
+      <label for="activity_url">In case you have a relevant activity, please indicate an URL:</label><br>
+      <input type="url" id="activity_url" name="activity_url" placeholder="https://example.com"><br><br>
+      <label for="newsletter_frequency">How often would you like to receive our newsletter?</label><br>
+      <select name="newsletter_frequency" id="newsletter_frequency">
+        <option value="" disabled selected>Select newsletter frequency</option>
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+      </select><br><br>
+      <label for="terms">I agree to the Terms and Conditions</label>
+      <input type="checkbox" id="terms" name="terms" required><br><br>
+      <label for="newsletter">Send a copy of the module to my email</label>
+      <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+      <button type="submit">Sign Up</button>
+      <button type="reset">Reset</button>
+      <button type="button" onclick="alert('This is a custom button!')">What is this?</button>
+      <button type="button" onclick="alert('No explanations or we\'ll punch you!')">Eh???</button> 
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a>.</p>
+  </body>
+</html>

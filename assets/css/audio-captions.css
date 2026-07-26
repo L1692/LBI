@@ -1,0 +1,22 @@
+.podcast-player-wrapper {
+  max-width: 720px;
+  margin: 1rem auto;
+  display: grid;
+  gap: 0.75rem;
+}
+
+#podcast-audio {
+  width: 100%;
+}
+
+#podcast-captions {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  min-height: 3rem;
+}
