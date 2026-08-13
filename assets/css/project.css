@@ -1,0 +1,13 @@
+@keyframes projectAnimation {
+    0% {color: red;}
+    50% {color: orange;}
+    100% {color: green;}
+}
+
+h1 {
+    color: red;
+    animation-name: projectAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
