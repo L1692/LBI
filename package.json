@@ -10,8 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/L1692/LBI.git"
   },
-  "keywords": [],
+  "keywords": [
+    "business intelligence",
+    "etl",
+    "data",
+    "analytics",
+    "dashboard",
+    "visualization"
+  ],
   "author": "",
+  "contributors": [],
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
@@ -21,7 +29,8 @@
   "devDependencies": {
     "autoprefixer": "^10.5.4",
     "postcss": "^8.5.26",
-    "tailwindcss": "^4.3.3"
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3"
